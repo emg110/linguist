@@ -901,6 +901,9 @@ vendor/grammars/svelte-atom:
 - source.svelte
 vendor/grammars/swift.tmbundle:
 - source.swift
+vendor/grammars/teal.tmbundle:
+- source.teal
+- text.txt.teal
 vendor/grammars/tcl.tmbundle:
 - source.tcl
 - text.html.tcl
