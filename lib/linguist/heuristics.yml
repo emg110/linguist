@@ -521,6 +521,10 @@ disambiguations:
     pattern: '\bpragma\s+solidity\b|\b(?:abstract\s+)?contract\s+(?!\d)[a-zA-Z0-9$_]+(?:\s+is\s+(?:[a-zA-Z0-9$_][^\{]*?)?)?\s*\{'
   - language: Gerber Image
     pattern: '^[DGMT][0-9]{2}\*\r?\n'
+- extensions: ['.teal']
+  rules:
+  - language: Teal
+    named_pattern: teal 
 - extensions: ['.sql']
   rules:
    # Postgres
@@ -647,3 +651,4 @@ named_patterns:
   objectivec: '^\s*(@(interface|class|protocol|property|end|synchronised|selector|implementation)\b|#import\s+.+\.h[">])'
   perl5: '\buse\s+(?:strict\b|v?5\.)'
   perl6: '^\s*(?:use\s+v6\b|\bmodule\b|\b(?:my\s+)?class\b)'
+  teal: '^(#pragma |bz |bnz |callsub |assert |int |byte |addr |unknown |pay |keyreg |acfg |axfer |afrz |appl |MinTxnFee |MinBalance |MaxTxnLife |ZeroAddress |GroupSize |LogicSigVersion |Round |LatestTimestamp |CurrentApplicationID |CreatorAddress)'
